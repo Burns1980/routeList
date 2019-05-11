@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>My Favorite Routes</title>
+    <link href="./styles/style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script src="scripts/main.js" async></script>
+    <meta charset="utf-8">
+    <meta name="author" content="Brent Zurek">
+    <meta name="description" content="Rock climbing list of all the routes I have done.">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Rock Climbing Routes</h1>
+      <figure>
+      <img src="./images/painted-wall.jpg" alt="A picture of the Painted Wall in the
+        Black Canyon."/>
+        <figcaption>A view of painted wall in the Black Canyon.</figcaption>
+      </figure>
+    </header>
+
+    <nav class="navigation">
+    </nav>
+
+    <main>
+      <!-- This will contain the interface to add new routes to the table -->
+      <fieldset>
+        <legend>Add A New Route</legend>
+        <label for='route'>Route: </label>
+        <input type='text' id='route' name='route'>
+        <label for='location'>Location: </label>
+        <input type='text' id='location' name='location'>
+        <label for='rating'>Difficulty Rating: </label>
+        <input type='text' name='rating' id='rating' list='ratingList'>
+        <datalist id='ratingList'>
+          <option>5.1 to 5.4</option>
+          <option>5.6</option>
+          <option>5.7</option>
+          <option>5.8</option>
+          <option>5.9-</option>
+          <option>5.9</option>
+          <option>5.9+</option>
+          <option>5.10a</option>
+          <option>5.10b</option>
+          <option>5.10c</option>
+          <option>5.10d</option>
+          <option>5.11a</option>
+          <option>5.11b</option>
+          <option>5.11c</option>
+          <option>5.11d</option>
+          <option>5.12a</option>
+          <option>5.12b</option>
+          <option>5.12c</option>
+          <option>5.12d</option>
+          <option>5.13a</option>
+          <option>5.13b</option>
+          <option>5.13c</option>
+          <option>5.13d</option>
+          <option>5.14a</option>
+          <option>5.14b</option>
+          <option>5.14c</option>
+          <option>5.14d</option>
+          <option>5.15a</option>
+          <option>5.15b</option>
+          <option>5.15c</option>
+          <option>5.15d</option>
+        </datalist>
+        <label for='grade'>Grade: </label>
+        <select id='grade' name='grade'>
+          <option>Grade I</option>
+          <option>Grade II</option>
+          <option>Grade III</option>
+          <option>Grade IV</option>
+          <option>Grade V</option>
+          <option>Grade VI</option>
+        </select>
+        <label for='notes'>Style/Notes: </label>
+        <textarea id='notes' name='notes' cols='20' rows='3'></textarea>
+        <!-- buttons, are by default, type='submit' -->
+        <button class='addRoute'>ADD</button>
+      </fieldset>
+      <!-- The table of all the routes I have done. -->
+      <table>
+        <caption>All the routes Brent has climbed.</caption>
+        <thead class="routes">
+          <tr class="rowhead">
+            <th scope="col" id="rtname">Route</th>
+            <th scope="col" id="locname">Location</th>
+            <th scope="col" id="difrating">Difficulty Rating</th>
+            <th scope="col" id="headstyle">Style</th>
+          </tr>
+        </thead>
+        <tbody class="routes">
+          <tr class="row1">
+            <th scope="row" class="route"><a href="https://www.mountainproject.com/route/105732422/epinephrine"
+              target="_blank">Epinephrine</a></th>
+            <td class="location">Red Rock National Park, NV</td>
+            <td class="rating">5.9 Grade IV</td>
+            <td class="style">Trad, Chimney, Face, Crack, OW, Dihedral</td>
+          </tr>
+          <tr class="row2">
+            <th scope="row" class="route"><a href="https://www.mountainproject.com/route/105750646/comic-relief"
+              target="_blank">Comic Relief</a></th>
+            <td class="location">Black Canyon, CO</td>
+            <td class="rating">5.10 Grade III</td>
+            <td class="style">Dihedral, Crack(thin hands to hands) Face, Slab</td>
+          </tr>
+          <tr class="row3">
+            <th scope="row" class="route"><a href="https://www.mountainproject.com/route/105748612/outer-space"
+               target="_blank">Outer Space</a></th>
+            <td class="location">Eldorado Canyon, CO</td>
+            <td class="rating">5.10b Grade II</td>
+            <td class="style">Dihedral, Face, Slab, Crack</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th scope="row" colspan="2">Hardest Route:</th>
+            <td colspan="2">12c</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+    <footer>
+      <a href="mailto:zburns1980@gmail.com">Email Brent</a>
+    </footer>
+  </body>
+
+</html>
